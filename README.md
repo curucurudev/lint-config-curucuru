@@ -33,14 +33,14 @@ Shared TypeScript / ESLint / Prettier configuration.
     `.eslintrc.js`
     ```js
     {
-        extends: ['./node_modules/@curucuru/lint-config/config/eslint'],
+        extends: ['@curucuru/lint-config/config/eslint'],
     }
     ```
 
     `.stylelint.js`
     ```js
     {
-        extends: ['./node_modules/@curucuru/lint-config/config/stylelint'],
+        extends: ['@curucuru/lint-config/config/stylelint'],
     }
     ```
 
