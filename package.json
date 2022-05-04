@@ -1,0 +1,54 @@
+{
+  "name": "@curucuru/lint-config",
+  "description": "Shared TypeScript / ESLint / Prettier configuration.",
+  "homepage": "https://github.com/curucurudev/lint-config-curucuru",
+  "version": "0.0.1",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "files": [
+    "config/",
+    "tsconfig.json",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:curucurudev/lint-config-curucuru.git"
+  },
+  "author": "curucurudev",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc --project tsconfig.bootstrap.json",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx ./src/"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.15.0",
+    "@typescript-eslint/parser": "^5.15.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^26.1.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "prettier-stylelint": "^0.4.2",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-prettier": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "eslint": "^8.10.0",
+    "eslint-config-next": "^12.1.0",
+    "prettier": "^2.5.1",
+    "stylelint": "^14.5.3",
+    "typescript": "^4.6.2"
+  },
+  "peerDependencies": {
+    "eslint": "^8.10.0",
+    "prettier": "^2.5.1",
+    "stylelint": "^14.5.3",
+    "typescript": "^4.6.2"
+  }
+}
