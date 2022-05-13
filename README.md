@@ -23,6 +23,7 @@ Shared TypeScript / ESLint / Prettier configuration.
     {
         "extends": "@curucuru/lint-config",
         "compilerOptions": {
+            "baseUrl": ".",
             "outDir": "./build",
             "rootDir": "./src"
         },
