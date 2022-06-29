@@ -25,7 +25,12 @@ Shared TypeScript / ESLint / Prettier configuration.
         "compilerOptions": {
             "baseUrl": ".",
             "outDir": "./build",
-            "rootDir": "./src"
+            "rootDir": "./src",
+            "paths": {
+              "@/*": [
+                "./src/*"
+              ],
+            },
         },
         "include": ["./src"]
     }
