@@ -32,7 +32,10 @@ Shared TypeScript / ESLint / Prettier configuration.
               ],
             },
         },
-        "include": ["./src"]
+        "include": [
+          "**/*.ts",
+          "**/*.tsx",
+        ]
     }
     ```
 
