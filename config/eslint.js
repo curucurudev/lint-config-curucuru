@@ -11,6 +11,7 @@ const config = {
         'eslint:recommended',
         'plugin:react/recommended',
         'plugin:@typescript-eslint/recommended',
+        'prettier',
     ],
     parserOptions: {
         ecmaFeatures: {
@@ -20,24 +21,23 @@ const config = {
         sourceType: 'module',
     },
     plugins: [
-        'prettier',
         'react',
         'import',
-        'simple-import-sort',
     ],
-    rules: {
-        'prettier/prettier': [
-            'error',
-            {
-                printWidth: 120,
-                tabWidth: 4,
-                useTabs: false,
-                singleQuote: true,
-                proseWrap: 'preserve',
-                trailingComma: 'all',
-                maxChaining: 1,
+    settings: {
+        react: {
+            version: 'detect',
+        },
+        'import/parsers': {
+            '@typescript-eslint/parser': ['.ts', '.tsx']
+        },
+        'import/resolver': {
+            typescript: {
+                alwaysTryTypes: true,
             },
-        ],
+        },
+    },
+    rules: {
         '@typescript-eslint/ban-ts-ignore': 'off',
         '@typescript-eslint/camelcase': 'off',
         '@typescript-eslint/explicit-function-return-type': 'off',
@@ -58,7 +58,31 @@ const config = {
         '@typescript-eslint/no-use-before-define': 'off',
         '@typescript-eslint/interface-name-prefix': 'off',
         'import/no-default-export': 'off',
-        'import/order': 'off',
+        'import/order': [
+            'error',
+            {
+                groups: [
+                    'builtin',
+                    'external',
+                    'parent',
+                    'sibling',
+                    'index',
+                    'object',
+                    'type',
+                ],
+                pathGroups: [
+                    {
+                        pattern: '@/**',
+                        group: 'parent',
+                        position: 'before',
+                    },
+                ],
+                alphabetize: {
+                    order: 'asc',
+                },
+                'newlines-between': 'always',
+            },
+        ],
         'max-classes-per-file': 'off',
         'no-console': 'warn',
         'no-useless-escape': 'off',
@@ -66,15 +90,9 @@ const config = {
         'react/jsx-no-target-blank': 'error',
         'react/prop-types': 'off',
         'react/react-in-jsx-scope': 'off',
-        'simple-import-sort/imports': 'error',
-        'simple-import-sort/exports': 'error',
         'sort-imports': 'off',
         'sort-keys': 'off',
-    },
-    settings: {
-        react: {
-            version: 'detect',
-        },
+        'quotes': ['error', 'single'],
     },
 };
 module.exports = config;

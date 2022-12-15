@@ -11,7 +11,7 @@ Shared TypeScript / ESLint / Prettier configuration.
 1. install
 
     ```
-    yarn add -D typescript eslint stylelint prettier 
+    yarn add -D typescript eslint stylelint prettier
     yarn add -D @curucuru/lint-config
     ```
 
@@ -41,16 +41,28 @@ Shared TypeScript / ESLint / Prettier configuration.
 
     `.eslintrc.js`
     ```js
-    {
-        extends: ['./node_modules/@curucuru/lint-config/config/eslint'],
+    /** @type {import('@typescript-eslint/utils').TSESLint.Linter.Config} */
+    const config = {
+      extends: ['./node_modules/@curucuru/lint-config/config/eslint'],
     }
+    module.exports = config;
     ```
 
     `.stylelint.js`
     ```js
-    {
+    /** @type {import('stylelint').Config} */
+    const config = {
         extends: ['./node_modules/@curucuru/lint-config/config/stylelint'],
     }
+    module.exports = config;
+    ```
+
+    `.prettierrc.js`
+    ```js
+    /** @type {import('prettier').Config} */
+    module.exports = {
+        ...require('./node_modules/@curucuru/lint-config/config/prettier'),
+    };
     ```
 
 3. Add scripts to `package.json`
