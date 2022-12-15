@@ -1,6 +1,7 @@
 # lint-config-curucuru
 
-Shared TypeScript / ESLint / Prettier configuration.
+Shareable Configs.
+Supported TypeScript / ESLint / Styleilnt / Prettier configuration.
 
 ## Requirements
 
