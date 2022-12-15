@@ -1,10 +1,8 @@
 {
   "name": "@curucuru/lint-config",
-  "description": "Shared TypeScript / ESLint / Prettier configuration.",
+  "description": "Shared TypeScript / ESLint / Styleilnt / Prettier configuration.",
   "homepage": "https://github.com/curucurudev/lint-config-curucuru",
-  "version": "0.1.2",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "version": "0.1.3",
   "files": [
     ".eslintrc.js",
     ".prettierrc.js",
