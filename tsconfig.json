@@ -16,7 +16,7 @@
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
 		"strict": false,
-		"target": "es5",
+		"target": "ES6",
 		"incremental": true
 	},
 	"exclude": [
@@ -25,6 +25,7 @@
 	"include": [
 		"next-env.d.ts",
 		"**/*.ts",
-		"**/*.tsx"
-, ".prettierrc.js"	]
+		"**/*.tsx",
+		".prettierrc.js"
+	]
 }
