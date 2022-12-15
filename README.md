@@ -44,7 +44,7 @@ Supported TypeScript / ESLint / Styleilnt / Prettier configuration.
     ```js
     /** @type {import('@typescript-eslint/utils').TSESLint.Linter.Config} */
     const config = {
-      extends: ['./node_modules/@curucuru/lint-config/config/eslint'],
+      extends: ['./node_modules/@curucuru/lint-config/.eslintrc.js'],
     }
     module.exports = config;
     ```
@@ -53,7 +53,7 @@ Supported TypeScript / ESLint / Styleilnt / Prettier configuration.
     ```js
     /** @type {import('stylelint').Config} */
     const config = {
-        extends: ['./node_modules/@curucuru/lint-config/config/stylelint'],
+        extends: ['./node_modules/@curucuru/lint-config/.stylelintrc.js'],
     }
     module.exports = config;
     ```
@@ -62,7 +62,7 @@ Supported TypeScript / ESLint / Styleilnt / Prettier configuration.
     ```js
     /** @type {import('prettier').Config} */
     module.exports = {
-        ...require('./node_modules/@curucuru/lint-config/config/prettier'),
+        ...require('./node_modules/@curucuru/lint-config/.prettierrc.js'),
     };
     ```
 
