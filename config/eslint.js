@@ -21,8 +21,9 @@ const config = {
         sourceType: 'module',
     },
     plugins: [
-        'react',
         'import',
+        'react',
+        'unused-imports',
     ],
     settings: {
         react: {
@@ -83,6 +84,7 @@ const config = {
                 'newlines-between': 'always',
             },
         ],
+        'unused-imports/no-unused-imports': 'error',
         'max-classes-per-file': 'off',
         'no-console': 'warn',
         'no-useless-escape': 'off',

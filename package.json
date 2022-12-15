@@ -23,7 +23,7 @@
     "build": "tsc --project tsconfig.bootstrap.json",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ./src/",
     "lint:fix": "eslint --ext .js,.jsx,.ts,.tsx ./src/ --fix",
-    "lint:example:": "eslint --ext .js,.jsx,.ts,.tsx ./example/",
+    "lint:example": "eslint --ext .js,.jsx,.ts,.tsx ./example/",
     "lint:example:fix": "eslint --ext .js,.jsx,.ts,.tsx ./example/ --fix",
     "stylelint:example": "stylelint './example/**/*.{css,scss}' --fix",
     "format:example": "prettier --write example"
@@ -38,6 +38,7 @@
     "eslint-plugin-jest": "^27.1.6",
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
     "prettier-stylelint": "^0.4.2",
     "stylelint-config-recess-order": "^3.0.0"
   },

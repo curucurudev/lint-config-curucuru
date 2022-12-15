@@ -20,8 +20,9 @@ const config: Linter.Config = {
         sourceType: 'module',
     },
     plugins: [
-        'react',
         'import',
+        'react',
+        'unused-imports',
     ],
     settings: {
         react: {
@@ -82,6 +83,7 @@ const config: Linter.Config = {
                 'newlines-between': 'always',
             },
         ],
+        'unused-imports/no-unused-imports': 'error',
         'max-classes-per-file': 'off',
         'no-console': 'warn',
         'no-useless-escape': 'off',
