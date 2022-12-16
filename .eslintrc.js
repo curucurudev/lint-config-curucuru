@@ -95,6 +95,13 @@ const config = {
         'sort-keys': 'off',
         'quotes': ['error', 'single'],
     },
-}
+    overrides: [
+        {
+            files: ['*.js'],
+            rules: {
+                '@typescript-eslint/no-var-requires': 'off',
+            },
+        },
+    ],
 
 module.exports = config;
