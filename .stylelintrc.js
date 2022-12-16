@@ -1,6 +1,6 @@
 /** @type {import('stylelint').Config} */
 const config = {
-    extends: ['stylelint-config-recess-order', 'prettier-stylelint'],
+    extends: ['stylelint-config-recommended', 'stylelint-config-recess-order'],
     rules: {
         indentation: 4,
     },
