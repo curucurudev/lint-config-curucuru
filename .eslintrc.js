@@ -6,12 +6,7 @@ const config = {
         node: true,
         jest: true,
     },
-    extends: [
-        'eslint:recommended',
-        'plugin:react/recommended',
-        'plugin:@typescript-eslint/recommended',
-        'prettier',
-    ],
+    extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:@typescript-eslint/recommended', 'prettier'],
     parserOptions: {
         ecmaFeatures: {
             jsx: true,
@@ -19,17 +14,13 @@ const config = {
         ecmaVersion: 2018,
         sourceType: 'module',
     },
-    plugins: [
-        'import',
-        'react',
-        'unused-imports',
-    ],
+    plugins: ['import', 'react', 'unused-imports'],
     settings: {
         react: {
             version: 'detect',
         },
         'import/parsers': {
-            '@typescript-eslint/parser': ['.ts', '.tsx']
+            '@typescript-eslint/parser': ['.ts', '.tsx'],
         },
         'import/resolver': {
             typescript: {
@@ -61,15 +52,7 @@ const config = {
         'import/order': [
             'error',
             {
-                groups: [
-                    'builtin',
-                    'external',
-                    'parent',
-                    'sibling',
-                    'index',
-                    'object',
-                    'type',
-                ],
+                groups: ['builtin', 'external', 'parent', 'sibling', 'index', 'object', 'type'],
                 pathGroups: [
                     {
                         pattern: '@/**',
@@ -93,7 +76,7 @@ const config = {
         'react/react-in-jsx-scope': 'off',
         'sort-imports': 'off',
         'sort-keys': 'off',
-        'quotes': ['error', 'single'],
+        quotes: ['error', 'single'],
     },
     overrides: [
         {
@@ -103,5 +86,6 @@ const config = {
             },
         },
     ],
+};
 
 module.exports = config;
