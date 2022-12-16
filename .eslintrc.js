@@ -76,6 +76,7 @@ const config = {
         'react/react-in-jsx-scope': 'off',
         'sort-imports': 'off',
         'sort-keys': 'off',
+        semi: ['error', 'always'],
         quotes: ['error', 'single'],
     },
     overrides: [
