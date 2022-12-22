@@ -18,15 +18,15 @@
     "strict": false,
     "target": "ES6",
     "incremental": true,
-    "importsNotUsedAsValues": "error"
+    "importsNotUsedAsValues": "error",
   },
-  "exclude": [
-    "node_modules"
-  ],
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     ".prettierrc.js"
-  ]
+  ],
+  "exclude": [
+    "node_modules"
+  ],
 }

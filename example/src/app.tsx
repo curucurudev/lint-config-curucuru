@@ -1,7 +1,8 @@
 import './app.css';
 
-import { Footer } from './components/footer';
-import { Header } from './components/header';
+import { Footer } from '@/components/footer';
+import { Header } from '@/components/header';
+
 import { logger } from './logger';
 
 import type { FC } from 'react';

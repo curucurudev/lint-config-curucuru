@@ -52,7 +52,7 @@ const config = {
         'import/order': [
             'error',
             {
-                groups: ['builtin', 'external', 'parent', 'sibling', 'index', 'object', 'type'],
+                groups: ['builtin', 'external', 'internal', 'unknown', 'parent', 'sibling', 'index', 'object', 'type'],
                 pathGroups: [
                     {
                         pattern: '@/**',
