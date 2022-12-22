@@ -1,11 +1,12 @@
 import './app.css';
-import React from 'react';
 
 import { Footer } from './components/footer';
 import { Header } from './components/header';
 import { logger } from './logger';
 
-export const App = () => {
+import type { FC } from 'react';
+
+export const App: FC = () => {
     logger.info('Start up App');
 
     return (
