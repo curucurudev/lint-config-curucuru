@@ -40,7 +40,10 @@ Supported TypeScript / ESLint / Styleilnt / Prettier configuration.
     ```js
     /** @type {import('@typescript-eslint/utils').TSESLint.Linter.Config} */
     const config = {
-        extends: ['./node_modules/@curucuru/lint-config/.eslintrc.js'],
+        extends: [
+            './node_modules/@curucuru/lint-config/.eslintrc.js',
+            // './node_modules/@curucuru/lint-config/.eslintrc.next.js', // for next.js
+        ],
     };
     module.exports = config;
     ```

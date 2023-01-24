@@ -5,6 +5,7 @@
   "version": "0.1.15",
   "files": [
     ".eslintrc.js",
+    ".eslintrc.next.js",
     ".prettierrc.js",
     ".stylelintrc.js",
     "tsconfig.json"
