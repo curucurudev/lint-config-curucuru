@@ -1,11 +1,12 @@
 {
-  "extends": "../tsconfig.json",
+  "extends": "./tsconfig.json",
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": "example",
     "paths": {
       "@/*": [
         "./src/*"
       ]
     },
+    "noEmit": true,
   }
 }

@@ -6,7 +6,13 @@ const config = {
         node: true,
         jest: true,
     },
-    extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:@typescript-eslint/recommended', 'prettier'],
+    extends: [
+        'eslint:recommended',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:react/recommended',
+        'plugin:react-hooks/recommended',
+        'plugin:@next/next/recommended',
+    ],
     parserOptions: {
         ecmaFeatures: {
             jsx: true,

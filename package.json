@@ -23,24 +23,26 @@
     "lint:fix": "eslint  --ignore-path=.lintignore --ext .js,.jsx,.ts,.tsx . --fix",
     "stylelint": "stylelint --ignore-path=.lintignore './example/**/*.{css,scss}' --fix",
     "format": "prettier --ignore-path=.lintignore --write .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc -p tsconfig.example.json"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.46.1",
-    "@typescript-eslint/parser": "^5.46.1",
-    "eslint-config-next": "^13.0.6",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-import-resolver-typescript": "^3.5.2",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jest": "^27.1.6",
-    "eslint-plugin-react": "^7.31.11",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "eslint-config-next": "^13.1.5",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-import-resolver-typescript": "^3.5.3",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jest": "^27.2.1",
+    "eslint-plugin-react": "^7.32.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-unused-imports": "^2.0.0",
     "postcss-scss": "^4.0.6",
-    "stylelint-config-recess-order": "^3.0.0"
+    "stylelint-config-recess-order": "^3.1.0"
   },
   "devDependencies": {
     "@types/node": "^18.11.15",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
     "eslint": "^8.29.0",
     "prettier": "^2.8.1",
     "react": "^18.2.0",
