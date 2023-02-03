@@ -1,4 +1,3 @@
-
 const baseConfig = require('./.eslintrc.js');
 
 /** @type {import('eslint/lib/shared/types').ConfigData} */
